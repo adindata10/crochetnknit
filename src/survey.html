@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Crochet n Knit</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3181159953.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile-style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar" style="background-color: #878f86">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../src/index.html">
+                    <img src="../assets/knitting - white.png" alt="Flaticon's Image" width="30" height="30" class="logo d-inline-block align-text-top">
+                    Crochet n Knit
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="../src/index.html">Home</a>
+                      <a class="nav-link" href="../src/index.html#artikel">Article</a>
+                      <a class="nav-link active" aria-current="page" href="#">Survey</a>
+                      <a class="nav-link" href="../src/about.html">About</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-survey">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 container-fluid">
+                    <div class="header-survey text-center"><br>
+                        <h3 class="survey-title">FORM SURVEY</h3>
+                        <p>Beri tahu kami bagaimana kami dapat meningkatkan Crochet n Knit</p><br><br>
+                    </div>
+                    <div class="survey text-center">
+                        <form action="connect.php" method="post">
+                            <div class="form-group">
+                                <label for="jekelamin">Jenis Kelamin</label>
+                                <div>
+                                    <label for="laki" class="radio-inline"><input type="radio" name="jkelamin" value="l" id="laki" checked>Laki-laki</label><br>
+                                    <label for="perem" class="radio-inline"><input type="radio" name="jkelamin" value="p" id="perem">Perempuan</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="number">Usia</label>
+                                <input type="number" name="usia" min="4" max="99" placeholder="Usia" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dropdown">
+                                    Pekerjaan
+                                    <select name="pekerjaan" id="pekerjaan" class="form-control" required>
+                                        <option value="pelajar">Pelajar</option>
+                                        <option value="mahasiswa">Mahasiswa</option>
+                                        <option value="partime">Pekerja Paruh Waktu</option>
+                                        <option value="fulltime">Pekerja Penuh</option>
+                                        <option value="pensiun">Pensiunan</option>
+                                        <option value="anggur">Pengangguran</option>
+                                        <option value="lain">Lainnya</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="survey-form-suggestions">
+                                    Saran atau Kritik
+                                    <textarea name="sarankritik" id="survey-form-suggestions" rows="5" class="input-textarea" required></textarea>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn px-5 py-2" style="background-color: #565057">SUBMIT SURVEY</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-md-11">
+                    <p>2022 | Pemrograman Web</p>
+                    <p>© Icons from Flaticon and Font Awesome. Images from Pexels.</p>
+                </div>
+                <div class="col-md-1">
+                    <h6>Contact</h6>
+                    <div class="column">
+                        <a href="https://github.com/adindata10/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.freecodecamp.org/adindata" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

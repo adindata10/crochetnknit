@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,500;1,200&family=Poppins:wght@100;200;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    outline: 0 !important;
+}
+
+header, section {
+    overflow-x: hidden;
+}
+
+:root {
+    --caveat-font: 'Caveat', cursive;
+    --poppins-font: 'Poppins', sans-serif;
+    --nunito-font: 'Nunito', sans-serif;
+    --dark-liver-color: #565057;
+    --hookers-green-color: #537874;
+    --mint-cream-color: #e6ede6;
+    --honeydew-color: #d9e8d8;
+    --xanadu-color: #878f86;
+}
+
+.navbar-brand {
+    font-family: var(--caveat-font);
+    color: whitesmoke;
+}
+
+.nav-link {
+    font-family: var(--poppins-font);
+    font-weight: 200;
+    color: whitesmoke;
+}
+
+.title, h1, h2, h3, h4, .kategori>h6, .header-survey>.survey-title {
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    color: var(--dark-liver-color);
+}
+
+.sub-title, .card-body, .about-tulisan>p, .isi-kate>.kate, li, .header-survey>p, .form-group {
+    font-family: var(--poppins-font);
+    font-weight: 200;
+    color: var(--dark-liver-color);
+}
+
+.btn {
+    font-family: var(--nunito-font);
+    color: whitesmoke;
+}
+
+.utama .row .col-md-6 .doll img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
+}
+
+.utama .row .col-md-6:last-child {
+    position: relative;
+}
+
+.utama .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: var(--mint-cream-color);
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.cover {
+    width: 100%;
+    background-color: var(--honeydew-color);
+}
+
+.section-1 .card .card-text {
+    padding: 0.5em;
+}
+
+.card {
+    height: 100%;
+}
+
+footer {
+    background: var(--hookers-green-color);
+    overflow-x: hidden;
+    padding: 3vmin 2vmin;
+    font-family: var(--nunito-font);
+    font-weight: 200;
+    color: whitesmoke;
+}
+
+.column a {
+    color: whitesmoke;
+}
+
+footer .column a+a {
+    padding: 0 1.3em;
+}
+
+.column>a:hover {
+    color:var(--dark-liver-color);
+}
+
+/*about page*/
+.about-utama {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(234, 229, 230, 0.7), rgba(234, 229, 230, 0.7)), url(../assets/pexels-knit-pro-9638967\ -\ Copy.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--dark-liver-color);
+    margin-bottom: 50px;
+}
+
+.about-utama>h1 {
+    padding-top: 150px;
+    text-shadow: 2px 2px 8px var(--mint-cream-color);
+}
+
+.section-about .row .col-md-5 .about-img img {
+    opacity: 0.8;
+    width: 60%;
+    border-radius: 0.2em;
+    margin-bottom: 50px;
+}
+
+.section-about .row .col-md-7 .about-tulisan {
+    margin-left: 100px;
+    background: var(--mint-cream-color);
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/*article*/
+.blog1 .row .col-md-7 .blog1-img img {
+    opacity: 0.8;
+    width: 60%;
+    border-radius: 0.2em;
+}
+
+.blog1 .row .col-md-7 .blog-img img {
+    opacity: 0.7;
+    width: 40%;
+    border-radius: 0.2em;
+}
+
+.blog1 .row .col-md-3 {
+    background-color: var(--mint-cream-color);
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.kate>span:hover {
+    font-weight: 700;
+    color: var(--xanadu-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: var(--mint-cream-color);
+    min-width: none;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--xanadu-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: contents;
+}
+
+.dropdown-content a:hover {
+    color: var(--hookers-green-color);
+    font-weight: 500;
+}
+
+.dropdown:hover .dropdown-content {
+    display: contents;
+}
+
+iframe {
+    max-width: 567px;
+    width: 100%;
+}
+
+.comment-box {
+    border: 1px solid var(--xanadu-color);
+    border-radius: 3px;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: var(--honeydew-color);
+}
+
+.comment-form button {
+    margin: 10px 0;
+}
+
+/*survey*/
+.section-survey {
+    background-image: linear-gradient(rgba(234, 229, 230, 0.7), rgba(234, 229, 230, 0.7)), url(../assets/pexels-knitting-needles-8971902.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-group, .form-control, .input-textarea {
+    padding: 15px;
+    border-radius: 0.6rem;
+    width: 100%;
+    margin: 10px auto 10px auto;
+}
+
+.radio-inline {
+    min-height: 1rem;
+    min-width: 1rem;
+}
