@@ -5,7 +5,7 @@
     $sarankritik = $_POST['sarankritik'];
 
     //database connection
-    $conn = new mysqli('localhost','root','','crochetnknit');
+    $conn = new mysqli('localhost','rootknit','rootknit','crochetnknit');
     if($conn->connect_error){
         echo "$conn->connect_error";
         die("Connection Failed : ". $conn->connect_error);
